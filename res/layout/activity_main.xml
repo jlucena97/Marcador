@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ejercicio.jlm.marcador.MainActivity">
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/marcador1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Local \n 0 "
+        android:textColor="#fff"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/punto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 punto"/>
+        <Button
+            android:id="@+id/punto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 puntos"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/punto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3 puntos" />
+        <Button
+            android:id="@+id/menospunto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-1 punto" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/marcador2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Visitante \n 0 "
+        android:textColor="#fff"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/puntos1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 punto"/>
+        <Button
+            android:id="@+id/puntos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 puntos"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/puntos3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3 puntos" />
+        <Button
+            android:id="@+id/menospuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-1 punto" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Resetear"
+        android:id="@+id/reset"/>
+    </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
